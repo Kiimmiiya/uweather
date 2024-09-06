@@ -47,14 +47,14 @@ const Page: PageEl = (props, state, refresh, getProps) => {
           <br-x />
           <f-cse>
             <f-cc style={{ height: 100 , width: 350 , backgroundColor: ("#00000068"), borderRadius: 80 , fontSize: 30 }}>
-              <img src="https://irmapserver.ir/research/16/T.webp"
+              <img src="https://cdn.ituring.ir/research/16/T.webp"
                 style={{ height: 30, objectFit: "contain" }} />
               <sp-3 />
               <span>Feels like: {props.feelslikec}°c </span>
             </f-cc>
             {/* <br-x /> */}
             <f-cc style={{ height: 100 , width: 350 , backgroundColor: "#00000068", borderRadius: 80 , fontSize: 30 }}>
-              <img src="https://irmapserver.ir/research/16/H.webp"
+              <img src="https://cdn.ituring.ir/research/16/H.webp"
                 style={{ height: 30, objectFit: "contain" }} />
               <sp-3 />
               <span>Humidity: {props.humidity} %RH </span>
@@ -103,7 +103,7 @@ export async function getServerSideProps(context) {
     usedquota, quota, quotaunit, status, regdate, expid,
     role, path, devmod, userip, } = session;
 
-  let data = await (await fetch("https://irmapserver.ir/research/api/weather")).json()
+  let data = await (await fetch("https://cdn.ituring.ir/research/api/weather")).json()
 
   let feelslikec = data.current_condition[0].FeelsLikeC
   let humidity = data.current_condition[0].humidity
