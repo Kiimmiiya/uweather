@@ -126,9 +126,3 @@ export async function getServerSideProps(context) {
     },
   }
 }
-
-
-
-
-
-// https://irmapserver.ir/research/43/W.webp
