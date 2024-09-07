@@ -18,7 +18,7 @@ const Page: PageEl = (props, state, refresh, getProps) => {
   return (
     <div style={{ direction: "ltr", minHeight: "11vh", fontFamily: "font", fontSize: 20, color: "white" }}>
       <br-x />
-      <Window style={{ minHeight: 500 , margin: 10 , width: "calc(100% - 20px)", backgroundImage: 'url("https://irmapserver.ir/research/16/A.webp', backgroundRepeat: "no-repeat" }}>
+      <Window style={{ minHeight: 500 , margin: 10 , width: "calc(100% - 20px)", backgroundImage: 'url("https://cdn.ituring.ir/research/16/A.webp', backgroundRepeat: "no-repeat" }}>
         <c-x>
           <br-x />
           <br-x />
